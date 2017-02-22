@@ -61,7 +61,7 @@ openssl req -x509 -nodes -days 3650 -newkey rsa:2048 -keyout default.key -out de
 The configuration provided will require valid ssl certificates or to be behind a load balancer with valid ssl.
 The configuration can be changed to get aws_config and ssl certificates as secrets.
 
-#### Health check endpoint
+## Health check endpoint
 
 If you are using this ECR proxy behind a load balancer that needs an endpoint to check if it's alive, you can hit /ping
 which will return a "200 OK".
